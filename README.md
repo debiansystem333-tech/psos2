@@ -18,7 +18,7 @@ PSOS2 is a systems programming project that combines C for high-level logic with
 ## Features
 
 - Bare-metal system programming with bootloader support
-- Custom memory management via linker scripts
+- Custom memory management
 - Low-level hardware interaction using Assembly
 - Modular C codebase for system operations
 - Build automation with Make
@@ -53,12 +53,13 @@ make clean
 
 ```
 psos2/
-├── src/                 # C source files
-├── asm/                 # Assembly source files
+├── arch/                # main bootloader and related files
+├── drivers/             # drivers
 ├── include/             # Header files
-├── linker/              # Linker scripts (.ld files)
+├── linker.ld/           #
 ├── Makefile             # Build configuration
-├── boot/                # Bootloader code
+├── mm/                  # Bootloader code
+├── user/                # User code
 └── README.md            # This file
 ```
 
@@ -69,13 +70,12 @@ The project uses a Makefile for build automation. Key targets:
 ```bash
 make              # Build the complete project
 make clean        # Remove build artifacts
-make run          # Build and run (requires emulator)
-make debug        # Build with debug symbols
+make run          #
+make run-gdb      # 
+make run-nox      # 
 ```
 
 ## Usage
-
-[Add specific instructions for running and testing the system]
 
 ## Technical Details
 
@@ -100,7 +100,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-[Specify your license here, e.g., MIT, GPL-3.0]
+
 
 ## Author
 
