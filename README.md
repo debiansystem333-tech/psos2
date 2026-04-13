@@ -1,4 +1,3 @@
-Based on the language composition (71.3% C, 15% Makefile, 12.6% Assembly, 1.1% Linker Script), here's a tailored README for your low-level systems programming project:
 
 
 # PSOS2
