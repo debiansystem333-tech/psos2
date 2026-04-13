@@ -1,6 +1,6 @@
 Based on the language composition (71.3% C, 15% Makefile, 12.6% Assembly, 1.1% Linker Script), here's a tailored README for your low-level systems programming project:
 
-```markdown name=README.md
+
 # PSOS2
 
 A bare-metal and low-level systems programming project written primarily in C with Assembly and custom linker scripts. This project demonstrates core operating system concepts and bootloader implementation.
