@@ -1,3 +1,6 @@
+Based on the language composition (71.3% C, 15% Makefile, 12.6% Assembly, 1.1% Linker Script), here's a tailored README for your low-level systems programming project:
+
+```markdown name=README.md
 # PSOS2
 
 A bare-metal and low-level systems programming project written primarily in C with Assembly and custom linker scripts. This project demonstrates core operating system concepts and bootloader implementation.
@@ -27,7 +30,7 @@ PSOS2 is a systems programming project that combines C for high-level logic with
 - **Assembler**: NASM or GAS (GNU Assembler)
 - **Build Tools**: Make
 - **Linker**: GNU ld
-- **NECESSARY**: QEMU or other emulator for testing bare-metal code
+- **Optional**: QEMU or other emulator for testing bare-metal code
 
 ## Installation
 
@@ -35,3 +38,75 @@ PSOS2 is a systems programming project that combines C for high-level logic with
 ```bash
 git clone https://github.com/debiansystem333-tech/psos2.git
 cd psos2
+```
+
+2. Build the project:
+```bash
+make
+```
+
+3. Clean build artifacts:
+```bash
+make clean
+```
+
+## Project Structure
+
+```
+psos2/
+├── src/                 # C source files
+├── asm/                 # Assembly source files
+├── include/             # Header files
+├── linker/              # Linker scripts (.ld files)
+├── Makefile             # Build configuration
+├── boot/                # Bootloader code
+└── README.md            # This file
+```
+
+## Building & Compilation
+
+The project uses a Makefile for build automation. Key targets:
+
+```bash
+make              # Build the complete project
+make clean        # Remove build artifacts
+make run          # Build and run (requires emulator)
+make debug        # Build with debug symbols
+```
+
+## Usage
+
+[Add specific instructions for running and testing the system]
+
+## Technical Details
+
+### Bootloader
+- Custom assembly bootloader for system initialization
+- Memory setup and CPU initialization
+- Transition from real mode (if applicable)
+
+### Memory Layout
+- Defined via custom linker scripts
+- Bare-metal memory segments management
+- Stack and heap configuration
+
+### Hardware Abstraction
+- Low-level I/O operations in Assembly
+- Hardware register access and control
+- Interrupt and exception handling (if applicable)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+[Specify your license here, e.g., MIT, GPL-3.0]
+
+## Author
+
+**debiansystem333-tech**
+
+---
+
+Last Updated: April 13, 2026
